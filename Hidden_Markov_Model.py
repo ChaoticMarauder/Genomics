@@ -243,8 +243,7 @@ class HMM():
         return sum(new_hmm.forward_final)
 
 if __name__ == '__main__':
-    # Example inputs from Jason Eisner's Ice Cream and Baltimore Summer example
-    # http://www.cs.jhu.edu/~jason/papers/#eisner-2002-tnlp
+    # source of data link http://www.cs.jhu.edu/~jason/papers/#eisner-2002-tnlp
     emission = np.array([[0.7, 0], [0.2, 0.3], [0.1, 0.7]])
     transmission = np.array([ [0, 0, 0, 0], [0.5, 0.8, 0.2, 0], [0.5, 0.1, 0.7, 0], [0, 0.1, 0.1, 0]])
     observations = ['2','3','3','2','3','2','3','2','2','3','1','3','3','1','1',
